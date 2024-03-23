@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1",
+    "add": "^2.0.6",
+    "firebase": "^10.9.0",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "react-redux": "^9.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.67",
+    "typescript": "5.4.2"
   }
 }

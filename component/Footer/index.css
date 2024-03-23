@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+.wrapper {
+  width: 100%;
+  height: 450px;
+  background-color: #FD6713;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .wrapper-contain {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .wrapper-contain .wrapper-contain-empty {
+  width: 10%;
+  height: 100%;
+}
+.wrapper .wrapper-contain .wrapper-contain-main {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-1 {
+  width: 60%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-1 .wrapper-contain-main-1-1-tittle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(24px, 4vw, 48px);
+  color: #fff;
+  font-weight: 700;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-1 hr {
+  height: 100%;
+  background-color: #fff;
+  height: 1px;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-1 p {
+  color: #fff;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-2 .wrapper-contain-main-1-2-tittle {
+  font-family: serif;
+  font-size: clamp(24px, 4vw, 42px);
+  color: #fff;
+  font-weight: 500;
+  padding-top: 24px;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-1 .wrapper-contain-main-1-2 p {
+  color: #fff;
+  font-size: 24px;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-2 {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 35px;
+  height: 90%;
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-2 .wrapper-contain-main-2-zalo {
+  animation: shakeRotate 0.5s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+@keyframes shakeRotate {
+  from {
+    transform: rotate(-5deg); /* Góc ban đầu -5 độ */
+  }
+  to {
+    transform: rotate(5deg); /* Góc cuối cùng 5 độ */
+  }
+}
+.wrapper .wrapper-contain .wrapper-contain-main .wrapper-contain-main-2 p {
+  color: #fff;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+.wrapper .wrapper-line {
+  width: 99%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.wrapper{
+    width: 100%;
+    height: 450px;
+    background-color: #FD6713;
+    display: flex;
+    flex-direction: column;
+    .wrapper-contain{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        .wrapper-contain-empty{
+            width: 10%;
+            height: 100%;
+        }
+        .wrapper-contain-main{
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .wrapper-contain-main-1{
+                width: 60%;
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .wrapper-contain-main-1-1{
+                    width: 60%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .wrapper-contain-main-1-1-tittle{
+                        font-family: "Cormorant Garamond", serif;
+                        font-size: clamp(24px, 4vw, 48px);
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                    hr{
+                        height: 100%;
+                        background-color: #fff;
+                        height: 1px;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: clamp(16px, 2.5vw, 24px);
+                    }
+                }
+                .wrapper-contain-main-1-2{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .wrapper-contain-main-1-2-tittle{
+                        font-family: serif;
+                        font-size: clamp(24px, 4vw, 42px);
+                        color: #fff;
+                        font-weight: 500;
+                        padding-top: 24px;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 24px;
+                    }
+                }
+            }
+            .wrapper-contain-main-2{
+                width: 40%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-right: 35px;
+                height: 90%;
+                .wrapper-contain-main-2-zalo{
+                    animation: shakeRotate  0.5s ease-in-out infinite alternate;
+                    cursor: pointer;
+                    @keyframes shakeRotate  {
+                        from {
+                            transform: rotate(-5deg); /* Góc ban đầu -5 độ */
+                        }
+                        to {
+                            transform: rotate(5deg); /* Góc cuối cùng 5 độ */
+                        }
+                    }
+                }
+                p{
+                    color: #fff;
+                    font-size: clamp(16px, 2.5vw, 24px); 
+                }
+            }
+        }
+    }
+    .wrapper-line{
+        width: 99%;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #fff;
+    }
+}
