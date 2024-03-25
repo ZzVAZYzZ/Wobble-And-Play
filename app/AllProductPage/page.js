@@ -1,6 +1,6 @@
 "use client"
 import { getAllData } from "../../services/firebase";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 import { saveArrayData } from "../GlobalRedux/features/counter/dataSlice";

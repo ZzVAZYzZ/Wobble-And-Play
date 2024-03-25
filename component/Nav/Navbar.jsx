@@ -276,7 +276,7 @@ const Navbar = () => {
                                   index + 1
                                 }-box-price-wrapper-text`}
                               >
-                                {item.price}
+                                {item.sale !== 0 ? item.sale.toLocaleString() : item.price.toLocaleString()}
                               </div>
                             </div>
                           </div>
