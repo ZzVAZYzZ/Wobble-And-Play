@@ -95,6 +95,187 @@ export default function Homepage() {
     return re.test(String(email).toLowerCase());
   }
 
+  const FAQsArray = [
+    `Bên mình áp dụng miễn phí vận chuyển cho mọi đơn hàng trên 50k.`,
+    `Tùy vào tình hình vận chuyển của đơn vị vận chuyển, nhưng trung bình các 1-2 ngày cho các đơn hàng trong nội thành hcm, 3 ngày cho các tỉnh miền nam và 5-6 ngày dành cho khu vực miền trung và miền bắc`,
+    `Với những đơn hàng sản phẩm bị hư hại do quá trình vận chuyển, bên mình sẽ hỗ trợ hoàn lại hàng hoặc đổi 1 sản phẩm tương tự.`,
+    `Bên mình áp dụng miễn phí vận chuyển cho mọi đơn hàng trên 50k.`,
+    `Các sản phẩm của Wobble&Play đều sử dụng nguồn nguyên liệu có xuất sứ rõ ràng. Ngoài ra, W&P cũng rất cẩn trọng trong các khâu chế tác để đảm bảo an toàn cho bé, bằng việc loại bỏ các thành phần có khả năng gây hại cho bé như các loại keo kết nối, in laze nhiệt.`,
+    `Làm thế nào vệ sinh đồ chơi cho bé khi chơi xong ?<br></br>
+    Vệ sinh Đồ chơi Wobble&Play:<br></br>
+    Thực hiện đơn giản và dễ dàng: <br></br>
+    &nbsp;1.Ba mẹ pha loãng một ít nước rửa bình sữa hoặc nước giặt quần
+    áo cho bé vào nước.<br></br>
+    &nbsp;2.Sau đó ngâm đồ chơi trong vòng 5 phút.<br></br>
+    &nbsp;3.Lấy ra và xả lại với nước vài lần cho đến khi hết xà phòng.
+    <br></br>
+    &nbsp;4.Cuối cùng, phơi khô ở nơi thoáng mát.<br></br>
+    <br></br>
+    Ba mẹ lưu ý:<br></br>&nbsp;• Không giặt đồ chơi bằng máy giặt vì có
+    thể làm hỏng hình dáng sản phẩm.<br></br>&nbsp;• Không sử dụng chất
+    tẩy rửa mạnh vì có thể gây hại cho bé.<br></br>&nbsp;• Phơi khô đồ
+    chơi hoàn toàn trước khi cho bé chơi để tránh nấm mốc.
+    <br></br>
+    <br></br>
+    Bảo quản, ba mẹ hãy: <br></br>&nbsp;• Bảo quản ở nơi khô ráo, thoáng
+    mát.<br></br>&nbsp;• Tránh ánh nắng trực tiếp`,
+  ];
+  let canClick = true;
+
+  function handleFAQsClick(e, parentId) {
+    if (canClick) {
+      var paragraph = document.getElementById(e);
+      var parentDiv = document.getElementById(parentId);
+      var svgIcon = document.querySelector(`#${parentId} svg`);
+      if (parentId == "FAQs23") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("781px", "67px");
+          FAQsArray[5] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 1s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 1s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 1000);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "781px");
+          parentDiv.style.animation = "scrollToBottom 1s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 1s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[5];
+          }, 1000);
+        }
+      } else if (parentId == "FAQs22") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("114px", "67px");
+          FAQsArray[4] = paragraph.innerHTML;
+          svgIcon.style.animation =
+            "rotateDownAnimation 1s ease-in-out forwards";
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 1s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 1000);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "114px");
+          parentDiv.style.animation = "scrollToBottom 1s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 1s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[4];
+          }, 1000);
+        }
+      } else if (parentId == "FAQs21") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("91px", "67px");
+          FAQsArray[3] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 500);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "91px");
+          parentDiv.style.animation =
+            "scrollToBottom 0.5s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[3];
+          }, 500);
+        }
+      } else if (parentId == "FAQs13") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("91px", "67px");
+          FAQsArray[2] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 500);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "91px");
+          parentDiv.style.animation =
+            "scrollToBottom 0.5s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[2];
+          }, 500);
+        }
+      } else if (parentId == "FAQs12") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("114px", "67px");
+          FAQsArray[1] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 500);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "114px");
+          parentDiv.style.animation =
+            "scrollToBottom 0.5s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[1];
+          }, 500);
+        }
+      } else if (parentId == "FAQs11") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("91px", "67px");
+          FAQsArray[0] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 500);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "91px");
+          parentDiv.style.animation =
+            "scrollToBottom 0.5s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[0];
+          }, 500);
+        }
+      }
+
+      canClick = false;
+      if (
+        parentDiv == "FAQs21" ||
+        parentDiv == "FAQs13" ||
+        parentDiv == "FAQs12" ||
+        parentDiv == "FAQs11"
+      ) {
+        setTimeout(() => {
+          canClick = true;
+        }, 500);
+      } else {
+        setTimeout(() => {
+          canClick = true;
+        }, 1000);
+      }
+    }
+  }
+
+  function changeHeightVariables(heightFrom, heightTo) {
+    document.documentElement.style.setProperty("--height-from", heightFrom);
+    document.documentElement.style.setProperty("--height-to", heightTo);
+  }
+
   return (
     <div>
       <div
@@ -273,18 +454,256 @@ export default function Homepage() {
                 Tìm kiếm món quà hoàn hảo cho bé yêu trong ngày thôi nôi? Hãy
                 khám phá set quà thôi nôi độc đáo từ Wobble & Play!
               </p>
-              <Link href="AllProductPage" draggable="false">SHOP NOW 4</Link>
+              <Link href="AllProductPage" draggable="false">
+                SHOP NOW 4
+              </Link>
             </div>
           </div>
         </div>
       </div>
       {/* Banner khuyen mai */}
-      <Link href="https://shopee.vn/shop/155343961?utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_17348930108&utm_term=avd168nfrmdh" draggable="false">
+      <Link
+        href="https://shopee.vn/shop/155343961?utm_campaign=-&utm_content=----&utm_medium=affiliates&utm_source=an_17348930108&utm_term=avd168nfrmdh"
+        draggable="false"
+      >
         <div className="salebanner">Banner khuyến mãi</div>
       </Link>
       {/* instagram place */}
-      <div>
-
+      <div className="instagramplace">
+        <div className="instagramplace-box">
+          <div className="instagramplace-box-1">
+            <div className="instagramplace-box-1-likebox">
+              <div className="instagramplace-box-1-likebox-container">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                      fill="#ffffff"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span>1.7K</span>
+              </div>
+            </div>
+            <h1>Wobble&Play</h1>
+          </div>
+          <div className="instagramplace-box-2">
+            <p>
+              Theo dõi chúng tôi trên instagram để cập nhật những sản phẩm mới
+              nhất
+            </p>
+          </div>
+          <div className="instagramplace-box-3">
+            <Link href="https://www.instagram.com/">
+              <div className="instagramplace-box-3-1"></div>
+            </Link>
+            <Link href="https://www.instagram.com/">
+              <div className="instagramplace-box-3-2"></div>
+            </Link>
+            <Link href="https://www.instagram.com/">
+              <div className="instagramplace-box-3-3"></div>
+            </Link>
+            <Link href="https://www.instagram.com/">
+              <div className="instagramplace-box-3-4"></div>
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* FAQs */}
+      <div className="FAQs">
+        <div className="FAQs-wrapper">
+          <h1>FAQs</h1>
+          <div className="FAQs-wrapper-1">
+            <h2>VẬN CHUYỂN VÀ BẢO HÀNH</h2>
+            <div className="FAQs-wrapper-1-question">
+              <div className="FAQs-wrapper-1-question-1" id="FAQs11">
+                <div className="FAQs-wrapper-1-question-1-title">
+                  <h3>Phí vận chuyển là bao nhiêu?</h3>
+                  <button onClick={() => handleFAQsClick("q11", "FAQs11")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q11"></p>
+              </div>
+              <div className="FAQs-wrapper-1-question-2" id="FAQs12">
+                <div className="FAQs-wrapper-1-question-2-title">
+                  <h3>Thời gian giao hàng bao lâu?</h3>
+                  <button onClick={() => handleFAQsClick("q12", "FAQs12")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q12"></p>
+              </div>
+              <div className="FAQs-wrapper-1-question-3" id="FAQs13">
+                <div className="FAQs-wrapper-1-question-3-title">
+                  <h3>Sản phẩm giao đến bị hư hại thì phải làm sao?</h3>
+                  <button onClick={() => handleFAQsClick("q13", "FAQs13")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q13"></p>
+              </div>
+            </div>
+          </div>
+          <div className="FAQs-wrapper-2">
+            <h2>SẢN PHẨM</h2>
+            <div className="FAQs-wrapper-2-question">
+              <div className="FAQs-wrapper-2-question-1" id="FAQs21">
+                <div className="FAQs-wrapper-2-question-1-title">
+                  <h3>Có phải 100% handmade ?</h3>
+                  <button onClick={() => handleFAQsClick("q21", "FAQs21")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q21"></p>
+              </div>
+              <div className="FAQs-wrapper-2-question-2" id="FAQs22">
+                <div className="FAQs-wrapper-2-question-2-title">
+                  <h3>Sản phẩm có an toàn cho bé dưới 12 tháng tuổi ? </h3>
+                  <button onClick={() => handleFAQsClick("q22", "FAQs22")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q22"></p>
+              </div>
+              <div className="FAQs-wrapper-2-question-3" id="FAQs23">
+                <div className="FAQs-wrapper-2-question-3-title">
+                  <h3>Làm thế nào để vệ sinh đồ chơi khi bé chơi xong? </h3>
+                  <button onClick={() => handleFAQsClick("q23", "FAQs23")}>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path
+                          d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"
+                          fill="#0F0F0F"
+                        ></path>{" "}
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <p id="q23"></p>
+              </div>
+            </div>
+          </div>
+          <div className="FAQs-wrapper-link">
+            <Link href="/ShippingAndWarrantyPage">
+              <p>
+                Xem thêm về chính sách vận chuyển và bảo hành của Wobble &Play.
+              </p>
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

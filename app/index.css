@@ -1,4 +1,9 @@
 @charset "UTF-8";
+:root {
+  --height-from: 67px;
+  --height-to: 435px;
+}
+
 div .subscribe-popupmodel {
   width: 100%;
   height: 100%;
@@ -277,7 +282,7 @@ div .bestsellers .bestsellers-wrapper {
   gap: 50px;
 }
 div .bestsellers .bestsellers-wrapper h1 {
-  color: #DB2C2C;
+  color: #db2c2c;
   font-size: 60px;
 }
 div .bestsellers .bestsellers-wrapper .bestsellers-carousel {
@@ -676,14 +681,14 @@ div .setquathoinoi .setquathoinoi-wrapper .setquathoinoi-wrapper-box .setquathoi
   top: 0;
   aspect-ratio: 1/1;
   height: 100%;
-  background-color: #EDEFEF;
+  background-color: #edefef;
   position: absolute;
 }
 div .setquathoinoi .setquathoinoi-wrapper .setquathoinoi-wrapper-box .setquathoinoi-wrapper-box-2 {
   width: 500px;
   height: 300px;
   position: absolute;
-  background-color: #FD6713;
+  background-color: #fd6713;
   left: 375px;
   top: 100px;
 }
@@ -705,7 +710,7 @@ div .setquathoinoi .setquathoinoi-wrapper .setquathoinoi-wrapper-box .setquathoi
 }
 div .setquathoinoi .setquathoinoi-wrapper .setquathoinoi-wrapper-box .setquathoinoi-wrapper-box-2 a {
   background-color: #fff;
-  color: #FF3131;
+  color: #ff3131;
   border: none;
   width: 240px;
   height: 34px;
@@ -718,9 +723,517 @@ div .setquathoinoi .setquathoinoi-wrapper .setquathoinoi-wrapper-box .setquathoi
 div a .salebanner {
   width: 100%;
   height: 400px;
-  background-color: #F4D0AB;
+  background-color: #f4d0ab;
   text-align: center;
   line-height: 400px;
   font-size: 60px;
   color: #000;
+}
+div .instagramplace {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div .instagramplace .instagramplace-box {
+  width: 70%;
+  height: 500px;
+  margin: 50px 0;
+  background-color: #f0f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 .instagramplace-box-1-likebox {
+  background-color: #f94161;
+  width: 50px;
+  height: 35px;
+  border-radius: 5px;
+  position: relative;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 .instagramplace-box-1-likebox:after {
+  content: "";
+  position: absolute;
+  bottom: -18px; /* Điều chỉnh vị trí phía trên */
+  left: 50%; /* Để căn giữa */
+  margin-left: -10px; /* Để căn mũi tên giữa */
+  border-width: 10px;
+  border-style: solid;
+  border-color: #f94161 transparent transparent transparent; /* Màu mũi tên và div giống nhau */
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 .instagramplace-box-1-likebox .instagramplace-box-1-likebox-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 .instagramplace-box-1-likebox .instagramplace-box-1-likebox-container svg {
+  width: 17.5px;
+  height: 17.5px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 .instagramplace-box-1-likebox .instagramplace-box-1-likebox-container span {
+  color: #fff;
+  font-size: 12px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-1 h1 {
+  font-family: "Cormorant Garamond", serif;
+  line-height: 50px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-2 {
+  width: 100%;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-2 p {
+  text-align: center;
+  font-size: 24px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-3 a .instagramplace-box-3-1 {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: #ff914d;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-3 a .instagramplace-box-3-2 {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: #ff914d;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-3 a .instagramplace-box-3-3 {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: #ff914d;
+}
+div .instagramplace .instagramplace-box .instagramplace-box-3 a .instagramplace-box-3-4 {
+  width: 250px;
+  aspect-ratio: 1/1;
+  background-color: #ff914d;
+}
+div .FAQs {
+  width: 100%;
+  background-color: #edefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div .FAQs .FAQs-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 50px 0;
+}
+div .FAQs .FAQs-wrapper h1 {
+  color: #e85502;
+  font-weight: 500;
+  font-size: 48px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 .FAQs-wrapper-1-question-1-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 .FAQs-wrapper-1-question-1-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 .FAQs-wrapper-1-question-1-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 .FAQs-wrapper-1-question-1-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-1 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 .FAQs-wrapper-1-question-2-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 .FAQs-wrapper-1-question-2-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 .FAQs-wrapper-1-question-2-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 .FAQs-wrapper-1-question-2-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-2 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 .FAQs-wrapper-1-question-3-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 .FAQs-wrapper-1-question-3-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 .FAQs-wrapper-1-question-3-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 .FAQs-wrapper-1-question-3-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-1 .FAQs-wrapper-1-question .FAQs-wrapper-1-question-3 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 h2 {
+  font-weight: 300;
+  font-size: 32px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 .FAQs-wrapper-2-question-1-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 .FAQs-wrapper-2-question-1-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 .FAQs-wrapper-2-question-1-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 .FAQs-wrapper-2-question-1-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-1 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 .FAQs-wrapper-2-question-2-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 .FAQs-wrapper-2-question-2-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 .FAQs-wrapper-2-question-2-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 .FAQs-wrapper-2-question-2-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-2 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 1px solid #000;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 .FAQs-wrapper-2-question-3-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 .FAQs-wrapper-2-question-3-title h3 {
+  font-size: 24px;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 .FAQs-wrapper-2-question-3-title button {
+  width: 27px;
+  height: 27px;
+  border: none;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 .FAQs-wrapper-2-question-3-title button svg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@keyframes rotateUpAnimation {
+  from {
+    transform: rotate(0deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(180deg); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+@keyframes rotateDownAnimation {
+  from {
+    transform: rotate(180deg); /* Góc quay ban đầu */
+  }
+  to {
+    transform: rotate(0); /* Góc quay cuối cùng (hoàn thành một vòng) */
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-2 .FAQs-wrapper-2-question .FAQs-wrapper-2-question-3 p {
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+@keyframes scrollToTop {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+@keyframes scrollToBottom {
+  from {
+    height: var(--height-from);
+  }
+  to {
+    height: var(--height-to);
+  }
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-link {
+  width: 700px;
+  padding: 15px 0 0 0;
+}
+div .FAQs .FAQs-wrapper .FAQs-wrapper-link a p {
+  font-size: 24px;
+  text-decoration: underline;
+  color: #DB2C2C;
 }/*# sourceMappingURL=index.css.map */
