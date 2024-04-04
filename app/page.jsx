@@ -132,61 +132,61 @@ export default function Homepage() {
           changeHeightVariables("781px", "67px");
           FAQsArray[5] = paragraph.innerHTML;
           paragraph.innerHTML = "";
-          parentDiv.style.animation = "scrollToTop 1s ease-in-out forwards";
-          svgIcon.style.animation =
-            "rotateDownAnimation 1s ease-in-out forwards";
-          setTimeout(() => {
-            parentDiv.style.removeProperty("animation");
-          }, 1000);
-        } else if (paragraph.innerHTML == "") {
-          changeHeightVariables("67px", "781px");
-          parentDiv.style.animation = "scrollToBottom 1s ease-in-out forwards";
-          svgIcon.style.animation = "rotateUpAnimation 1s ease-in-out forwards";
-          setTimeout(() => {
-            parentDiv.style.removeProperty("animation");
-            paragraph.innerHTML = FAQsArray[5];
-          }, 1000);
-        }
-      } else if (parentId == "FAQs22") {
-        if (paragraph.innerHTML != "") {
-          changeHeightVariables("114px", "67px");
-          FAQsArray[4] = paragraph.innerHTML;
-          svgIcon.style.animation =
-            "rotateDownAnimation 1s ease-in-out forwards";
-          paragraph.innerHTML = "";
-          parentDiv.style.animation = "scrollToTop 1s ease-in-out forwards";
-          setTimeout(() => {
-            parentDiv.style.removeProperty("animation");
-          }, 1000);
-        } else if (paragraph.innerHTML == "") {
-          changeHeightVariables("67px", "114px");
-          parentDiv.style.animation = "scrollToBottom 1s ease-in-out forwards";
-          svgIcon.style.animation = "rotateUpAnimation 1s ease-in-out forwards";
-          setTimeout(() => {
-            parentDiv.style.removeProperty("animation");
-            paragraph.innerHTML = FAQsArray[4];
-          }, 1000);
-        }
-      } else if (parentId == "FAQs21") {
-        if (paragraph.innerHTML != "") {
-          changeHeightVariables("91px", "67px");
-          FAQsArray[3] = paragraph.innerHTML;
-          paragraph.innerHTML = "";
-          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          parentDiv.style.animation = "scrollToTop 00.5s ease-in-out forwards";
           svgIcon.style.animation =
             "rotateDownAnimation 0.5s ease-in-out forwards";
           setTimeout(() => {
             parentDiv.style.removeProperty("animation");
           }, 500);
         } else if (paragraph.innerHTML == "") {
-          changeHeightVariables("67px", "91px");
-          parentDiv.style.animation =
-            "scrollToBottom 0.5s ease-in-out forwards";
+          changeHeightVariables("67px", "781px");
+          parentDiv.style.animation = "scrollToBottom 0.5s ease-in-out forwards";
           svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
           setTimeout(() => {
             parentDiv.style.removeProperty("animation");
-            paragraph.innerHTML = FAQsArray[3];
+            paragraph.innerHTML = FAQsArray[5];
           }, 500);
+        }
+      } else if (parentId == "FAQs22") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("114px", "67px");
+          FAQsArray[4] = paragraph.innerHTML;
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.5s ease-in-out forwards";
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 500);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "114px");
+          parentDiv.style.animation = "scrollToBottom 0.5s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.5s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[4];
+          }, 500);
+        }
+      } else if (parentId == "FAQs21") {
+        if (paragraph.innerHTML != "") {
+          changeHeightVariables("91px", "67px");
+          FAQsArray[3] = paragraph.innerHTML;
+          paragraph.innerHTML = "";
+          parentDiv.style.animation = "scrollToTop 0.2s ease-in-out forwards";
+          svgIcon.style.animation =
+            "rotateDownAnimation 0.2s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+          }, 200);
+        } else if (paragraph.innerHTML == "") {
+          changeHeightVariables("67px", "91px");
+          parentDiv.style.animation =
+            "scrollToBottom 0.2s ease-in-out forwards";
+          svgIcon.style.animation = "rotateUpAnimation 0.2s ease-in-out forwards";
+          setTimeout(() => {
+            parentDiv.style.removeProperty("animation");
+            paragraph.innerHTML = FAQsArray[3];
+          }, 200);
         }
       } else if (parentId == "FAQs13") {
         if (paragraph.innerHTML != "") {
@@ -262,11 +262,11 @@ export default function Homepage() {
       ) {
         setTimeout(() => {
           canClick = true;
-        }, 500);
+        }, 200);
       } else {
         setTimeout(() => {
           canClick = true;
-        }, 1000);
+        }, 500);
       }
     }
   }
@@ -296,7 +296,6 @@ export default function Homepage() {
         </div>
       </div>
       <div style={{ width: "100%", height: "150px" }}></div>
-
       <div
         style={{ width: "100%", height: "500px", backgroundColor: "#F4D0AB" }}
       ></div>
