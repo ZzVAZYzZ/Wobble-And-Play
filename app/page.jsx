@@ -17,14 +17,16 @@ export default function Homepage() {
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
-  const bestsellers_product = count.slice(0, 8);
+  const [data, setData] = useState([]);
+  const bestsellers_product = data.slice(0, 8);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const newData = await getAllData();
-        newData.sort((a, b) => b.bestsellers_count - a.bestsellers_count);
-        console.log(newData);
+        const sortBestsellerData = [...newData];
+        sortBestsellerData.sort((a, b) => b.bestsellers_count - a.bestsellers_count);
+        setData(sortBestsellerData);
         dispatch(checkData());
         dispatch(saveArrayData(newData));
       } catch (error) {
@@ -33,8 +35,12 @@ export default function Homepage() {
     };
     if (!checkDataFlag) {
       fetchData();
+    }else{
+      const sortBestsellerData = [...count];
+      sortBestsellerData.sort((a, b) => b.bestsellers_count - a.bestsellers_count);
+      setData(sortBestsellerData);
     }
-  }, []);
+  }, [count]);
 
   const settings = {
     dots: false,

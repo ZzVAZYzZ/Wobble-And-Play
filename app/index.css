@@ -734,6 +734,7 @@ div .instagramplace {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 div .instagramplace .instagramplace-box {
   width: 70%;

@@ -32,7 +32,7 @@ export async function getAllData(){
     });
     return products;
 }
-
+//POST subscribe email
 export async function postSubscribeEmail(userEmail){
   setDoc(doc(db, "subscribe-email", userEmail),{
     subscribeEmail: userEmail
